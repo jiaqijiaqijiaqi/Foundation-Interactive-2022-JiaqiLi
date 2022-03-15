@@ -638,12 +638,12 @@ li {
 }
 .t-line{
 	width: 172px;
-    height: 42.5px;
-    background-color: white;
-    border-radius: 0% 35% 0% 0%;
+        height: 42.5px;
+        background-color: white;
+        border-radius: 0% 35% 0% 0%;
 	transform: rotate(-3deg);
-    left: -130%;
-    top: -60%;
+        left: -130%;
+        top: -60%;
 }
 .U{
 	width: 150px;
