@@ -638,12 +638,12 @@ li {
 }
 .t-line{
 	width: 172px;
-        height: 42.5px;
-        background-color: white;
-        border-radius: 0% 35% 0% 0%;
+    height: 42.5px;
+    background-color: white;
+    border-radius: 0% 35% 0% 0%;
 	transform: rotate(-3deg);
-        left: -130%;
-        top: -60%;
+    left: -130%;
+    top: -60%;
 }
 .U{
 	width: 150px;
@@ -665,37 +665,85 @@ li {
 	animation-play-state: paused;
 }
 .V{
+	 border-bottom: 100px solid white;
+      border-left: 50px solid transparent;
+      border-right: 25px solid transparent;
+      border-radius: 8%;
+      height: 0;
+      width: 120px;
+      transform: rotate(283deg);
+      margin-top: 50px;
+}
+
+.trapezoid-center{
+	 border-bottom:50px solid black;
+      border-left: 25px solid transparent;
+      border-right: 12px solid transparent;
+      height: 0;
+      width: 125px;
+      transform: rotate(0deg);
+      margin-top: 50px;
+      position: relative;
+	  top: 50px;
+	  left: 5px;
+}
+
+.rectangle{
+	width: 195px;
+	height: 40px;
+	background-color: white;
+	border-radius: 5px 5px 30px 10px;
+	position: absolute;
+	bottom: -120px;
+	right: -27px;
+	z-index: 1;
+	transform: rotate(1deg);
+}
+
+.V2{
 	width: 150px;
 	height: 170px;
 	background-color: white;
-	border-radius: 0% 35% 0% 0%;
+	border-radius: 0% 0% 0% 20%;
 	transform: skew(-10deg);
 	margin-top: 0px;
+	box-shadow: 0 0 0;
 }
-.triangle-bottom-v{
-	  width: 0;
-      height: 0;
-      border-bottom: 100px solid black;
-      border-right: 100px solid transparent;
-	  transform: skew(0deg);
-	  filter: none;
-	  left: -17%;
-	  top:-10%;
-	  box-shadow: 0 0 0;
-	  animation-play-state: paused;
+.triangle-bottom-5{
+	width: 0;
+	height: 0;
+	border-bottom: solid black 175px;
+	border-right: solid transparent 50px;
+	border-left: solid transparent 0px;
+	left: -40%;
+	top:-178%;
+	filter: none;
+	box-shadow: 0 0 0;
+	animation: stop;
 }
-.trapezoid-v{
-	  border-bottom: 80px solid black;
-      border-left: 25px solid transparent;
-      border-right: 25px solid transparent;
-	  transform: rotate(-73deg);
-      height: 0;
-      width: 100px;
-	  left: 0%;
-	  top:-165%;
-	  filter: none;
-	  box-shadow: 0 0 0;
-	  animation-play-state: paused;
+.triangle-bottom-6{
+	width: 0;
+	height: 0;
+	border-top: solid black 100px;
+	border-right: solid transparent 30px;
+	border-left: solid transparent 30px;
+	left: 0%;
+	top:-59%;
+	filter: none;
+	box-shadow: 0 0 0;
+	animation: stop;
+}
+.triangle-bottom-7{
+	width: 0;
+	height: 0;
+	border-bottom: solid black 175px;
+	border-left: solid transparent 50px;
+	border-right: solid transparent 0px;
+	left: 38%;
+	top:-338%;
+	filter: none;
+	box-shadow: 0 0 0;
+	animation: stop;
 }
 .W{
 	width: 150px;
