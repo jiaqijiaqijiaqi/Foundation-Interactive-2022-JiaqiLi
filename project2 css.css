@@ -39,7 +39,7 @@ div {
     box-shadow: 11.6px 10px 0 0 #fe2d52;
     z-index: 10;
     transform: skewX(-5deg);
-    animation: move 3s infinite ease-in;
+    animation: move 2s infinite ease-in;
 }
 
 li > div:hover{
