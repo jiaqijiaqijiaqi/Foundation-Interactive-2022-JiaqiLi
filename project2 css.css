@@ -5,6 +5,7 @@
 
 }
 
+
 h1 {
     font: bold 200% Consolas, Monaco, monospace;
 	  color: white;
@@ -38,7 +39,7 @@ div {
     box-shadow: 11.6px 10px 0 0 #fe2d52;
     z-index: 10;
     transform: skewX(-5deg);
-    animation: move 3s infinite ease-in;
+    animation: move 1.5s infinite ease-in;
 }
 
 li > div:hover{
@@ -54,14 +55,14 @@ li :active{
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
 
       box-shadow:
-      0 0 7px #24f6f0,
-      0 0 10px #24f6f0,
-      0 0 21px #24f6f0,
-      0 0 42px #fe2d52,
-      0 0 82px #fe2d52,
-      0 0 92px #fe2d52,
-      0 0 102px #fe2d52,
-      0 0 151px #fe2d52;
+      0 0 7px #01ffe0,
+      0 0 10px #01ffe0,
+      0 0 21px #01ffe0,
+      0 0 42px #01ffe0,
+      0 0 82px #01ffe0,
+      0 0 92px #01ffe0,
+      0 0 102px #01ffe0,
+      0 0 151px #01ffe0;
 
   }
 
