@@ -1,8 +1,16 @@
 body {
       font-family:  sans-serif;
+	color: antiquewhite;
       line-height: 1.5em;
-      background-color: white;  
+       background: linear-gradient(45deg, #ffc107, deeppink, #9c27b0);
+    animation: hueRotate 10s infinite alternate;
     }
+
+@keyframes hueRotate {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
     .main {
       width: 50%;
       margin: 3em auto;
@@ -19,14 +27,24 @@ body {
 
     a {
       font-weight: bold;
-      color: #0000ff;
+      color: antiquewhite;
       text-decoration: none;
     }
 
     a:hover {
-      background-color: #0000ff;
+      animation: yellow 1.5s ease-in-out infinite alternate;
     }
 
+@keyframes yellow {
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffeb3b, 0 0 70px #ffeb3b, 0 0 80px #ffeb3b, 0 0 100px #ffeb3b, 0 0 150px #ffeb3b;
+        
+    }
+    from {
+        filter: brightness(110%);
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ffeb3b, 0 0 35px #ffeb3b, 0 0 40px #ffeb3b, 0 0 50px #ffeb3b, 0 0 75px #ffeb3b;
+  }
+}
     ul {
       padding-left: 18px;
       list-style: none;
