@@ -266,6 +266,7 @@ body {
 	margin-left: 230px;
 	margin-top: 350px;
 	position: absolute;
+	opacity: 60%;
 }
 .eye2{
 	width: 10px;
@@ -275,6 +276,7 @@ body {
 	margin-left: 260px;
 	margin-top: 355px;
 	position: absolute;
+	opacity: 60%;
 }
 
 .light:hover{
