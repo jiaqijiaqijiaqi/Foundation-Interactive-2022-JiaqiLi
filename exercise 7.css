@@ -1,0 +1,304 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #DADADA;
+}
+
+
+/* if you want to change the background of your canvas, do it here */
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: pink;
+	position: relative;
+	border: solid black 5px;
+}
+
+
+/* this is where you can style the objects in your still life */
+
+.square1{
+    width: 100px;
+    height: 60px;
+    margin-left: 277px;
+	margin-top: 280px;
+	border-radius: 5px;
+	transform: skew(-60deg);
+	position: absolute;
+    background: #545454;
+}
+.square2{
+	width: 150px;
+    height: 30px;
+    margin-left: 275px;
+	margin-top: 324px;
+	border-radius: 0px;
+	transform: skewY(-30deg);
+	position: absolute;
+    background: #2F2F2F;
+	box-shadow: 0.3em 0.3em 1em rgb(7,32,255,50%);
+}
+.candle1{
+	width: 185px;
+    height: 40px;
+    background: #888888;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 390px;
+	margin-top: 288px;
+	opacity: 50%;
+
+}
+.candle2{
+	width:185px;
+    height: 25px;
+    background: #6F6F6F;
+	position: absolute;
+	margin-left: 390px;
+	margin-top: 310px;
+	opacity: 30%;
+
+}
+.candle3{
+	width: 185px;
+    height: 50px;
+    background-color: #6A6A6A;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 390px;
+	margin-top: 310px;
+	opacity: 40%;
+	box-shadow: 0.3em 0.3em 1em blue;
+
+}
+.colum{
+	width: 60px;
+    height: 150px;
+    background: linear-gradient(0deg, blue, pink);
+	border-radius: 10%;
+	position: absolute;
+	margin-left: 455px;
+	margin-top: 155px;
+	
+}
+.ball1{
+	width: 70px;
+	height: 70px;
+	background: linear-gradient(40deg, blue, pink);
+	border-radius: 50%;
+	margin-left: 435px;
+	margin-top: 225px;
+	position: absolute;
+	transition: transform 2s;
+}
+.ball2{
+	width: 70px;
+	height: 70px;
+	background: linear-gradient(-40deg, blue, pink);
+	border-radius: 50%;
+	margin-left: 490px;
+	margin-top: 185px;
+	position: absolute;
+	transition: transform 2s;
+}
+.ball3{
+	width: 70px;
+	height: 70px;
+	background: linear-gradient(-30deg, blue, pink);
+	border-radius: 50%;
+	margin-left: 445px;
+	margin-top: 180px;
+	position: absolute;
+	transition: transform 2s;
+}
+.ball4{
+	width: 70px;
+	height: 70px;
+	background: linear-gradient(30deg, blue, pink);
+	border-radius: 50%;
+	margin-left: 395px;
+	margin-top: 170px;
+	position: absolute;
+	transition: transform 2s;
+}
+.ball5{
+	width: 70px;
+	height: 70px;
+	background: linear-gradient(-70deg, blue, pink);
+	border-radius: 50%;
+	margin-left: 475px;
+	margin-top: 210px;
+	position: absolute;
+	transition: transform 2s;
+}
+.ball6{
+	width: 70px;
+	height: 70px;
+	background: linear-gradient(0deg, blue, pink);
+	border-radius: 50%;
+	margin-left: 510px;
+	margin-top: 210px;
+	position: absolute;
+	transition: transform 2s;
+	box-shadow: 0.3em 0.3em 1em rgb(7,32,255,50%);
+}
+.ball7{
+	width: 70px;
+	height: 70px;
+	background: linear-gradient(0deg, blue, pink);
+	border-radius: 50%;
+	margin-left: 480px;
+	margin-top: 155px;
+	position: absolute;
+	transition: transform 2s;
+	box-shadow: 0.3em 0.3em 1em rgb(7,32,255,50%);
+}
+.ball8{
+	width: 110px;
+	height: 110px;
+	background: linear-gradient(0deg, blue, pink);
+	border-radius: 50%;
+    margin-left: 420px;
+	margin-top: 170px;
+	position: absolute;
+	transition: transform 2s;
+}
+.trapezoid{
+    width:80px;
+    height:0;
+    border-top: 110px solid #FD96A8;
+    border-right: 10px solid transparent;
+    border-left:10px solid transparent;
+	margin-left: 278px;
+	margin-top: 220px;
+	border-radius: 10%;
+	position: absolute;
+	transform: rotate(8deg);
+}
+.oval{
+	width: 130px;
+    height: 90px;
+    background: #FD96A8;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 213px;
+	margin-top: 307px;
+	transform: rotate(-15deg);
+}
+.leg1{
+	width: 40px;
+    height: 20px;
+     background: #FD96A8;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 218px;
+	margin-top: 380px;
+	transform: rotate(-60deg);
+	box-shadow: 0.3em 0.3em 1em rgb(7,32,255,50%);
+}
+.leg2{
+	width: 40px;
+    height: 20px;
+     background: #FD96A8;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 260px;
+	margin-top: 380px;
+	transform: rotate(70deg);
+	box-shadow: 0.3em 0.3em 1em rgb(7,32,255,50%);
+}
+.leg3{
+	width: 40px;
+    height: 20px;
+     background: #FD96A8;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 300px;
+	margin-top: 360px;
+	transform: rotate(70deg);
+	box-shadow: 0.3em 0.3em 1em rgb(7,32,255,50%);
+}
+.triangle1{
+	width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom: 25px solid #FB8196;
+	border-radius: 30%;
+	margin-left: 195px;
+	margin-top: 300px;
+	position: absolute;
+	transform: rotate(-40deg);
+	
+}
+.triangle2{
+	width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom: 25px solid #FB8196;
+	border-radius: 30%;
+	margin-left: 265px;
+	margin-top: 305px;
+	position: absolute;
+	transform: rotate(40deg);
+}
+.light{
+   display:block;
+   width: 20px;
+   height: 40px;
+   background: linear-gradient(0deg, yellow, red);
+   border-radius: 50%  50%  50%  50%  / 60%   60%   40%  40%;
+   margin-left: 475px;
+   margin-top: 120px;
+   position: absolute;
+   animation: flicker 0.1s ease-in-out infinite alternate;
+   filter: brightness(110%);
+   
+}
+.eye1{
+	width: 10px;
+	height: 10px;
+	background: black;
+	border-radius: 50%;
+	margin-left: 230px;
+	margin-top: 350px;
+	position: absolute;
+}
+.eye2{
+	width: 10px;
+	height: 10px;
+	background: black;
+	border-radius: 50%;
+	margin-left: 260px;
+	margin-top: 355px;
+	position: absolute;
+}
+
+.light:hover{
+   filter:opacity(40%);
+   animation-play-state: paused;
+}
+.ball1:hover, .ball2:hover, .ball3:hover, .ball4:hover, .ball4:hover, .ball5:hover, .ball6:hover{
+    transform: rotate(180deg);
+}
+@keyframes flicker{
+	0%{
+		opacity: 1;
+	}
+	20%{
+		opacity: 80%;
+	}
+
+	40%{
+		opacity: 60%;
+	}
+	80%{
+		opacity: 80%;
+	}
+	100%{
+        opacity: 1;
+  }
+}
