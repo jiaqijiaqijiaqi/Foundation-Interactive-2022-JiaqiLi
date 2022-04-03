@@ -1,0 +1,16 @@
+@charset "utf-8";
+img{
+	width: 1505px;
+	height: 842.4px;
+	display: flex;
+	position: absolute;
+	margin: auto;
+}
+iframe{
+	width: 260px;
+	height: 148px;
+	position: absolute;
+	margin-top: 520px;
+	margin-left: 550px;
+	box-shadow: 0.3em 0.3em 1em grey;
+}
