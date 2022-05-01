@@ -1,0 +1,276 @@
+@charset "utf-8";
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+@property --per {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 100%;
+}
+
+body {
+    background: repeating-linear-gradient(45deg, deeppink, #fc0, #000, red, green, gray var(--per));
+    animation: perChange 60s infinite linear;
+    cursor: pointer;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+@keyframes perChange {
+    5% {
+        --per: 1%;
+    }
+    10% {
+        --per: .1%;
+    }
+    30% {
+        --per: .01%;
+    }
+    50% {
+        --per: .001%;
+    }
+    70% {
+        --per: .0001%;
+    }
+    78% {
+        --per: .00001%;
+    }
+    90% {
+        --per: .000001%;
+    }
+    95%,
+    100% {
+        --per: .0000001%;
+    }
+}
+body{
+	cursor: none !important; //hide the default cursor
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	
+}
+#green-cursor{
+	width: 100px;
+	height: 110px;
+	border-radius: 100%;
+	mix-blend-mode: screen;
+	background-color: none;
+	background-image:url("Martin2.png");
+	background-size:100px 110px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+.wall1{
+	position: absolute;
+	width: 450px;
+	height: 30px;
+	
+	top:10%;
+	left:430px;
+}
+
+.wall2{
+	position: absolute;
+	width: 30px;
+	height: 450px;
+
+	top:10%;
+	left:1030px;
+}
+.wall3{
+	position: absolute;
+	width: 600px;
+	height: 30px;
+	
+	top:641px;
+	left:460px;
+}
+.wall4{
+	position: absolute;
+	width: 30px;
+	height: 600px;
+	
+	top:10%;
+	left:430px
+}
+.wall5{
+	position: absolute;
+	width: 30px;
+	height: 170px;
+
+	top:10%;
+	left:880px;
+}
+.wall6{
+	position: absolute;
+	width: 450px;
+	height: 30px;
+
+	top:492px;
+	left:610px;
+}
+.wall7{
+	position: absolute;
+	width: 290px;
+	height: 30px;
+
+	top:211.5px;
+	left:610px;
+}
+
+
+@property --length {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0.00085px;
+}
+
+div {
+    width: 240px;
+    height: 240px;
+    margin: auto;
+}
+
+div {
+    background-image: repeating-radial-gradient(
+        circle at 17% 32%,
+        rgb(4, 4, 0),
+        rgb(52, 72, 197),
+        rgb(115, 252, 224),
+        rgb(116, 71, 5),
+        rgb(223, 46, 169),
+        rgb(0, 160, 56),
+        rgb(234, 255, 0) var(--length)
+    );
+    animation: change 1s infinite alternate;
+}
+
+@keyframes change {
+    100% {
+        --length: 0.0009px;
+    }
+}
+.return1{
+	top:530px;
+	left:920px;
+	position: absolute;
+	animation: shake 800ms ease-in-out infinite;
+}
+@keyframes shake{
+	10%, 90%{ transform: translate3d(-1px, 0, 0);}
+	20%, 80%{ transform: translate3d(2px, 0, 0);}
+	30%, 70%{ transform: translate3d(-4px, 0, 0);}
+	40%, 60%{ transform: translate3d(4px, 0, 0);}
+	50%{ transform: translate3d(-4px, 0, 0);}
+}
+.return2{
+	top:10%;
+	left:910px;
+	position: absolute;
+	animation: shake2 800ms ease-in-out infinite;
+}
+@keyframes shake2{
+	10%, 90%{ transform: translate3d(-1px, 0, 0);}
+	20%, 80%{ transform: translate3d(2px, 0, 0);}
+	30%, 70%{ transform: translate3d(-4px, 0, 0);}
+	40%, 60%{ transform: translate3d(4px, 0, 0);}
+	50%{ transform: translate3d(-4px, 0, 0);}
+}
+
+/*DRAGGABLE */
+        #draggable{ 
+          width: 150px;
+          height: 50px;
+          padding: 0.5em;
+          background-color: #000000;
+          font-style: sans-serif;
+          color: #ffffff;
+         }
+
+/*DROPPABLE */
+
+   #droppable, #droppable2, #droppable3, #droppable4{
+           width: 150px;
+          height: 150px;
+          padding: 0.5em;
+          /*background-color: #ffffff;*/
+          border: #000000 1px solid;
+          	font-family: 'Lato', sans-serif;
+	font-weight:300;
+         }
+
+		#droppable5{
+        width: 150px;
+        height: 150px;
+        padding: 0.5em;
+		background-image: none;
+			top:240px;
+			left:860px;
+			position: absolute;
+				font-family: 'Lato', sans-serif;
+	font-weight:300;
+       }
+
+/*STYLES */
+
+  .blue-border{
+    width: 150px;
+    height: 150px;
+    padding: 0.5em;
+	  background-image: none;
+	  left:755px;
+	  top:80px;
+	  position: absolute;
+  }
+
+
+  .sorbet3{
+          background-color: #F7AB8F;
+        }
+
+  .turquoise{
+          background-color: #8FF7DF;
+        }
+
+   #cottoncandy{
+          width: 300px;
+          height: 300px;
+          padding: 0.5em;
+        }
+    .pinkcotton{
+          width: 150px;
+          height: 150px;
+          padding: 0.5em;
+          background-image:
+          linear-gradient(
+             to left, 
+             #FF69B4,
+             #FFB6C1
+            );
+        }
+
+    .pinkcotton2{
+          width: 150px;
+          height: 150px;
+          padding: 0.5em;
+          background-image:
+          linear-gradient(
+             to left, 
+             #FF69B4,
+             #FFB6C1
+            );
+        }
+.music{
+	left:500px;
+	top:560px;
+	  position: absolute;
+}
+.map{
+	left:0px;
+	top:550px;
+	  position: absolute;
+}
