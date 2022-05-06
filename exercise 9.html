@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>exercise 9</title>
+	<link rel="stylesheet" href="exercise 9.css">
+	<link rel="stylesheet" href="jquery-ui-1.32.1/jquery-ui.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+	<script src="exercise 9.js" defer></script>
+
+		<script>
+    		$(function(){
+
+          $('#draggable').draggable();
+
+          $('#droppable').droppable({
+            drop: function(event, ui){
+              $(this)
+              .addClass("sorbet1")
+              .find("p")
+              .html("Dropped!");
+            }
+          });
+
+    	
+
+        /*SCOPE */
+          $('#coffeebeans').draggable({scope:"coffeefilter"});
+          $('#coffeefilter').droppable({
+            scope: 'coffeefilter',
+            drop: function(event, ui){
+              $(this)
+              .addClass("coffeefilter")
+              .find("p")
+              .html("&#9835");
+            }
+          });
+    $('#coffeebeans2').draggable({scope:"coffeefilter2"});
+          $('#coffeefilter2').droppable({
+            scope: 'coffeefilter2',
+            drop: function(event, ui){
+              $(this)
+              .addClass("coffeefilter2")
+              .find("p")
+              .html("&#9833");
+            }
+          });
+				 $('#coffeebeans3').draggable({scope:"coffeefilter3"});
+          $('#coffeefilter3').droppable({
+            scope: 'coffeefilter3',
+            drop: function(event, ui){
+              $(this)
+              .addClass("coffeefilter3")
+              .find("p")
+              .html("&#9837");
+            }
+          });
+       		 $('#coffeebeans4').draggable({scope:"coffeefilter4"});
+          $('#coffeefilter4').droppable({
+            scope: 'coffeefilter4',
+            drop: function(event, ui){
+              $(this)
+              .addClass("coffeefilter4")
+              .find("p")
+              .html("&#9833");
+            }
+          });
+				 $('#coffeebeans5').draggable({scope:"coffeefilter5"});
+          $('#coffeefilter5').droppable({
+            scope: 'coffeefilter5',
+            drop: function(event, ui){
+              $(this)
+              .addClass("coffeefilter5")
+              .find("p")
+              .html("&#9835");
+            }
+          });
+       
+       
+        /*ACTIVE CLASS HOVER CLASS */
+        $('#cottoncandy').droppable({
+            activeClass:"pinkcotton",
+            hoverClass:"rainbow",
+            drop: function(event, ui){
+              $(this)
+              .addClass("pinkcotton2")
+              .find("p")
+              .html("i'm pink!");
+            }
+          });
+
+    	   });	
+			
+			
+			$( function() {
+    $( "#sortable" ).sortable();
+  } );
+			
+
+
+		</script>
+
+</head>
+
+<body>
+<span id="green-cursor"></span>
+
+	<!--SCOPE -->
+    <div id= "coffeebeans">
+      <p> </p>
+    </div> 
+ 
+
+    <div id= "coffeefilter">
+      <p> </p>
+    </div> 
+	 <div id= "coffeebeans2">
+      <p>  </p>
+    </div> 
+ 
+
+    <div id= "coffeefilter2">
+      <p>  </p>
+    </div> 
+ <div id= "coffeebeans3">
+      <p>  </p>
+    </div> 
+ 
+
+    <div id= "coffeefilter3">
+      <p>  </p> </div>
+<div id= "coffeebeans4">
+      <p>  </p>
+    </div> 
+ 
+
+    <div id= "coffeefilter4">
+      <p>  </p> </div>
+ 
+<div id= "coffeebeans5">
+      <p>  </p>
+    </div> 
+ 
+
+    <div id= "coffeefilter5">
+      <p>  </p> </div>
+ 
+	
+</body>
+</html>

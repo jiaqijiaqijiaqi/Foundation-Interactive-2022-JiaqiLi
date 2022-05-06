@@ -1,0 +1,214 @@
+div{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: white;
+	text-align: center;
+}
+@function listShadowOne() {
+    $n: 10;
+    $m: 5;
+    $list: ();
+    @for $j from 0 to $m {
+        @for $i from 0 to $n {
+            $list: $list, $i*10vmin $j*2*10vmin #fff;
+        }
+    }
+
+    @return $list;
+}
+
+@function listShadowThree() {
+    $n: 10;
+    $m: 5;
+    $list: ();
+    @for $j from 0 to $m {
+        @for $i from 0 to $n {
+            $list: $list, $i*10vmin ($j*2-1)*10vmin #fff;
+        }
+    }
+
+    @return $list;
+}
+
+@function listShadowTwo() {
+    $n: 10;
+    $m: 5;
+    $list: ();
+    
+    @for $j from 0 to $m {
+        @for $i from 0 to $n {
+            $list: $list, $i*10vmin $j*2*10vmin-10vmin #00f1fc;
+        }
+    }
+
+    @return $list;
+}
+
+@function listShadowFour() {
+    $n: 10;
+    $m: 5;
+    $list: ();
+    
+    @for $j from 0 to $m {
+        @for $i from 0 to $n {
+            $list: $list, $i*10vmin ($j*2-1)*10vmin+10vmin #fd0130;
+        }
+    }
+
+    @return $list;
+}
+
+
+body {
+    background: #000;
+   
+}
+
+div {
+    
+    width: 100vmin;
+    height: 100vmin;
+    margin: 0 auto;
+    background: #000;
+    animation: scale 3s infinite alternate;
+ 
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5vmin;
+    height: 5vmin;
+    // background: #fff;
+    box-shadow: listShadowOne();
+    animation: radiusChange 3s infinite alternate;
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5vmin;
+    height: 5vmin;
+    // background: #fff;
+    box-shadow: listShadowThree();
+    animation: radiusChangeAfter 3s infinite alternate;
+}
+
+
+
+
+
+@keyframes scale {
+    25% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+}
+
+#coffeebeans{
+         width: 70px;
+         height: 70px;
+         padding: 0.5em;
+         background-color: #F2BB13;
+	border-radius: 50%;
+	cursor: grab;
+}
+
+
+#coffeefilter{
+          width: 70px;
+         height: 70px;
+         padding: 0.5em;
+         border: #F2A20C 2px dashed;
+		border-radius: 50%;
+	cursor: not-allowed;
+	
+}
+#coffeebeans2{
+         width: 70px;
+         height: 70px;
+         padding: 0.5em;
+         background-color: white;
+	border-radius: 50%;
+	cursor: grab;
+}
+
+
+#coffeefilter2{
+          width: 70px;
+         height: 70px;
+         padding: 0.5em;
+         border: #F2BB13 2px dashed;
+		border-radius: 50%;
+	cursor: not-allowed;
+}
+#coffeebeans3{
+         width: 30px;
+         height: 30px;
+         padding: 0.5em;
+         background-color: #F2A20C;
+	border-radius: 50%;
+	cursor: grab;
+}
+
+
+#coffeefilter3{
+          width: 30px;
+         height: 30px;
+         padding: 0.5em;
+         border:white 2px dashed;
+		border-radius: 50%;
+	cursor: not-allowed;
+}
+#coffeebeans4{
+         width: 70px;
+         height: 70px;
+         padding: 0.5em;
+         background-color: #A65D03;
+	border-radius: 50%;
+	cursor: grab;
+}
+
+
+#coffeefilter4{
+          width: 70px;
+         height: 70px;
+         padding: 0.5em;
+         border:#F2BB13 2px dashed;
+		border-radius: 50%;
+	cursor: not-allowed;
+}
+#coffeebeans5{
+         width: 70px;
+         height: 70px;
+         padding: 0.5em;
+         background-color: #F2BB13;
+	border-radius: 50%;
+	cursor: grab;
+	
+}
+
+
+#coffeefilter5{
+          width:70px;
+         height: 70px;
+         padding: 0.5em;
+         border:white 2px dashed;
+		border-radius: 50%;
+	cursor: not-allowed;
+
+}
+.coffeefilter{
+         width: 150px;
+         height: 150px;
+         padding: 0.5em;
+         border: #733702 4px dashed;
+		border-radius: 50%;
+}
+
+
